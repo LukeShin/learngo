@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/learngo/banking"
+	"github.com/LukeShin/learngo/banking"
 )
 
 func main() {
