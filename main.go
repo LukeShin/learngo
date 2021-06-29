@@ -3,10 +3,16 @@ package main
 import (
 	"fmt"
 
-	"github.com/LukeShin/learngo/banking"
+	"github.com/usrname/learngo/accounts"
 )
 
 func main() {
-	account := banking.Account{Owner: "Luke", Balance: 10000000000}
-	fmt.Println(account)
+	account := accounts.NewAccount("Luke")
+	account.Deposit(10)
+	err := account.Withdraw(20)
+	if err != nil {
+		// log.Fatalln(err)
+		fmt.Println(err)
+	}
+	fmt.Println(account.Balance(), account.Owner())
 }
