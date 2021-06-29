@@ -8,4 +8,5 @@ import (
 
 func main() {
 	account := banking.Account{Owner: "Luke", Balance: 10000000000}
-	fmt.Println(acco
+	fmt.Println(account)
+}
