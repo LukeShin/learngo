@@ -15,7 +15,7 @@ func main() {
 		fmt.Println(err)
 	}
 	hello, _ := dictionary.Search(word)
-	fmt.Println(hello)
+	fmt.Println("found:", word, "defintion:", hello)
 	err2 := dictionary.Add(word, definition)
 	if err2 != nil {
 		fmt.Println(err2)
